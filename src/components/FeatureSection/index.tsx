@@ -1,4 +1,20 @@
 import Image from 'next/image';
+import { FeatureCardPropsInterface, FeatureCard } from '../FeatureCard';
+
+const featureCardData: FeatureCardPropsInterface[] = [
+  {
+    title: 'Fast working process',
+    text: 'At Pixology we specialize in designing, building, shipping and scaling beautiful.'
+  },
+  {
+    title: 'Didicated team',
+    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.'
+  },
+  {
+    title: '24/7 hours support',
+    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.'
+  },
+]
 
 const FeatureSection = () => {
   return (
@@ -23,47 +39,11 @@ const FeatureSection = () => {
           </h2>
 
           <ul className="feature-list">
-            <li>
-              <div className="feature-card">
-                <div className="card-icon">{/* <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon> */}</div>
-
-                <div>
-                  <h3 className="h3 card-title">Fast working process</h3>
-
-                  <p className="card-text">
-                    At Pixology we specialize in designing, building, shipping and scaling beautifu.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div className="feature-card">
-                <div className="card-icon">{/* <ion-icon name="people-sharp" aria-hidden="true"></ion-icon> */}</div>
-
-                <div>
-                  <h3 className="h3 card-title">Didicated team</h3>
-
-                  <p className="card-text">
-                    At Pixology we specialize in designing, building, shipping and scaling beautifu.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div className="feature-card">
-                <div className="card-icon">{/* <ion-icon name="headset-sharp" aria-hidden="true"></ion-icon> */}</div>
-
-                <div>
-                  <h3 className="h3 card-title">24/7 hours support</h3>
-
-                  <p className="card-text">
-                    At Pixology we specialize in designing, building, shipping and scaling beautifu.
-                  </p>
-                </div>
-              </div>
-            </li>
+            {featureCardData.map((item, index) => {
+              return <li key={index}>
+                <FeatureCard {...item} />
+              </li>
+            })}
           </ul>
         </div>
       </div>

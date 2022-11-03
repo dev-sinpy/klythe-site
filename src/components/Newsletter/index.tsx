@@ -22,7 +22,7 @@ const Newsletter: React.FC = () => {
         <div className="newsletter-content">
           <p className="section-subtitle has-before">Get every update</p>
 
-          <h2 className="h2 section-title">Subscribe newslater get latest updates and deals</h2>
+          <h2 className="h2 section-title">Subscribe newsletter get latest updates and deals</h2>
 
           <form action="" className="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your mail" required className="email-field" />

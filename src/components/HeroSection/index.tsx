@@ -1,6 +1,22 @@
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import { HeroLinkPropsInterface, HeroSocialLink } from '../HeroSocialLinks';
+
+const linkData: HeroLinkPropsInterface[] = [
+  {
+    link: '#',
+    title: 'Facebook'
+  },
+  {
+    link: '#',
+    title: 'Youtube'
+  },
+  {
+    link: '#',
+    title: 'Twitter'
+  },
+]
 
 const HeroSection: React.FC = () => {
   return (
@@ -23,29 +39,11 @@ const HeroSection: React.FC = () => {
           </div>
 
           <ul className="social-list">
-            <li>
-              <a href="#" className="social-link">
-                {/* <ion-icon name="logo-facebook"></ion-icon> */}
-
-                <span className="span">Facebook</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="social-link">
-                {/* <ion-icon name="logo-youtube"></ion-icon> */}
-
-                <span className="span">Youtube</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="social-link">
-                {/* <ion-icon name="logo-twitter"></ion-icon> */}
-
-                <span className="span">Twitter</span>
-              </a>
-            </li>
+            {linkData.map((item, index) => {
+              return <li key={index}>
+                <HeroSocialLink {...item} />
+              </li>
+            })}
           </ul>
         </div>
 

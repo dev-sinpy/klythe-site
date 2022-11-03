@@ -1,7 +1,31 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { NavBarLinkPropsInterface, NavBarLink } from '../NavBarLink';
 
+const NavBarLinkData: NavBarLinkPropsInterface[] = [
+  {
+    link: "#home",
+    title: "Home"
+  },
+  {
+    link: "#service",
+    title: "Services"
+  },
+  {
+    link: "#feature",
+    title: "Features"
+  },
+  {
+    link: "#project",
+    title: "Portfolio"
+  },
+  {
+    link: "#blog",
+    title: "Blog"
+  },
+
+]
 const Header: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
@@ -37,35 +61,11 @@ const Header: React.FC = () => {
           </div>
 
           <ul className="navbar-list">
-            <li className="navbar-item">
-              <a href="#home" className="navbar-link" data-nav-link>
-                Home
-              </a>
-            </li>
-
-            <li className="navbar-item">
-              <a href="#service" className="navbar-link" data-nav-link>
-                Services
-              </a>
-            </li>
-
-            <li className="navbar-item">
-              <a href="#feature" className="navbar-link" data-nav-link>
-                Features
-              </a>
-            </li>
-
-            <li className="navbar-item">
-              <a href="#project" className="navbar-link" data-nav-link>
-                Portfolio
-              </a>
-            </li>
-
-            <li className="navbar-item">
-              <a href="#blog" className="navbar-link" data-nav-link>
-                Blog
-              </a>
-            </li>
+            {NavBarLinkData.map((item, index) => {
+              return <li key={index} className="navbar-item">
+                <NavBarLink {...item} />
+              </li>
+            })}
           </ul>
         </nav>
 
