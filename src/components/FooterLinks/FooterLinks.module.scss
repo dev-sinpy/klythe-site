@@ -1,0 +1,9 @@
+.footer-link {
+  font-size: var(--fs-8);
+  margin-block-start: 15px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--mustard);
+}

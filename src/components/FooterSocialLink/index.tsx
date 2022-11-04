@@ -1,5 +1,3 @@
-import styles from './.module.scss';
-
 export interface SocialLinkPropsInterface {
     link: string,
     // logo: string,

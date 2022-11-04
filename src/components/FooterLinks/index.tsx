@@ -1,5 +1,4 @@
-import styles from './.module.scss';
-
+import styles from './FooterLinks.module.scss';
 export interface FooterLinkPropsInterface {
     link: string,
     title: string
@@ -9,7 +8,7 @@ export interface FooterLinkPropsInterface {
 const FooterLinks = (props: FooterLinkPropsInterface) => {
     return (
         <>
-            <a href={props.link} className="footer-link">
+            <a href={props.link} className={styles['footer-link']}>
                 {props.title}
             </a>
         </>
