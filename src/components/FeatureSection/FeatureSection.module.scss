@@ -44,9 +44,32 @@
   margin-block: 20px 70px;
 }
 
+.feature,
+.feature-list {
+  display: grid;
+  gap: 60px;
+}
+
 @media (min-width: 1200px) {
   .section-title.text-center {
     max-width: 20ch;
     margin-inline: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .feature-banner {
+    max-width: max-content;
+  }
+
+  .feature-list {
+    gap: 30px;
   }
 }

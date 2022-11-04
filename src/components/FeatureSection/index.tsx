@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FeatureCardPropsInterface, FeatureCard } from '../FeatureCard';
+import styles from './FeatureSection.module.scss';
 
 const featureCardData: FeatureCardPropsInterface[] = [
   {
@@ -18,9 +19,9 @@ const featureCardData: FeatureCardPropsInterface[] = [
 
 const FeatureSection = () => {
   return (
-    <section className="section feature" id="feature" aria-label="feature">
+    <section className={styles['section feature']} id="feature" aria-label="feature">
       <div className="container">
-        <figure className="feature-banner">
+        <figure className={styles['feature-banner']}>
           <Image
             src="/images/feature-banner.png"
             width="582"
@@ -38,7 +39,7 @@ const FeatureSection = () => {
             Specialist in aviding clients of financial <span className="has-before">challenges</span>
           </h2>
 
-          <ul className="feature-list">
+          <ul className={styles['feature-list']}>
             {featureCardData.map((item, index) => {
               return <li key={index}>
                 <FeatureCard {...item} />

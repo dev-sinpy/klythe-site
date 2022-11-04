@@ -3,6 +3,7 @@ import { FooterLinks } from '../FooterLinks';
 import { InstaPost, InstaPostPropsInterface } from '../InstaPost';
 import { FooterLinkPropsInterface } from '../FooterLinks/index';
 import { SocialLinkPropsInterface, FooterSocialLinks } from '../FooterSocialLink';
+import styles from './Footer.module.scss';
 
 const instaPostData: InstaPostPropsInterface[] = [
   {
@@ -94,18 +95,18 @@ const socialLinks: SocialLinkPropsInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className={styles['footer']}>
       <div className="container">
         <div className="footer-top section">
           <div className="footer-brand">
-            <p className="footer-list-title">About Klythe</p>
+            <p className={styles['footer-list-title']}>About Klythe</p>
 
-            <p className="footer-text">
+            <p className={styles['footer-text']}>
               A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci
               tationulla
             </p>
 
-            <ul className="social-list">
+            <ul className={styles['social-list']}>
               {socialLinks.map((item, index) => {
                 return <li key={index}>
                   <FooterSocialLinks {...item} />
@@ -116,7 +117,7 @@ const Footer = () => {
 
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Useful Links</p>
+              <p className={styles['footer-list-title']}>Useful Links</p>
             </li>
             {usefulLinks.map((item, index) => {
               return <li key={index}>
@@ -127,7 +128,7 @@ const Footer = () => {
 
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Community</p>
+              <p className={styles['footer-list-title']}>Community</p>
             </li>
 
             {communityLinks.map((item, index) => {
@@ -139,11 +140,11 @@ const Footer = () => {
 
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Instagram post</p>
+              <p className={styles['footer-list-title']}>Instagram post</p>
             </li>
 
             <li>
-              <ul className="insta-post">
+              <ul className={styles['insta-post']}>
                 {instaPostData.map((item, index) => {
                   return <li key={index}>
                     <InstaPost {...item} />
@@ -154,18 +155,18 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-bottom">
-          <p className="copyright">&copy; 2022 Klythe. All Rights Reserved by Klythe</p>
+        <div className={styles['footer-bottom']}>
+          <p className={styles['copyright']}>&copy; 2022 Klythe. All Rights Reserved by Klythe</p>
 
-          <ul className="footer-bottom-list">
+          <ul className={styles['footer-bottom-list']}>
             <li>
-              <a href="#" className="footer-bottom-link">
+              <a href="#" className={styles['footer-bottom-link']}>
                 Terms and conditions
               </a>
             </li>
 
             <li>
-              <a href="#" className="footer-bottom-link">
+              <a href="#" className={styles['footer-bottom-link']}>
                 Privacy policy
               </a>
             </li>
