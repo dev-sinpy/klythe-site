@@ -83,6 +83,14 @@
   gap: 15px;
 }
 
+footer .social-list {
+  gap: 12px !important;
+}
+
+.social-list {
+  display: flex !important;
+}
+
 @media (min-width: 768px) {
   .footer-top {
     grid-template-columns: 1fr 1fr;

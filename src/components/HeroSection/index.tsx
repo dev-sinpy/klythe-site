@@ -1,21 +1,27 @@
+import Image from 'next/image';
+import styles from './HeroSection.module.scss';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
 import { HeroLinkPropsInterface, HeroSocialLink } from '../HeroSocialLinks';
-import styles from './HeroSection.module.scss';
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 const linkData: HeroLinkPropsInterface[] = [
   {
     link: '#',
-    title: 'Facebook'
+    title: 'Facebook',
+    iconName: faFacebook
   },
   {
     link: '#',
-    title: 'Youtube'
+    title: 'Youtube',
+    iconName: faYoutube
   },
   {
     link: '#',
-    title: 'Twitter'
+    title: 'Twitter',
+    iconName: faTwitter
   },
 ]
 

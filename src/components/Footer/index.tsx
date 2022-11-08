@@ -1,7 +1,11 @@
 import { FooterLinks } from '../FooterLinks';
+import styles from './Footer.module.scss';
 import { FooterLinkPropsInterface } from '../FooterLinks/index';
 import { SocialLinkPropsInterface, FooterSocialLinks } from '../FooterSocialLink';
-import styles from './Footer.module.scss';
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faSkype } from "@fortawesome/free-brands-svg-icons"
 
 const usefulLinks: FooterLinkPropsInterface[] = [
   {
@@ -54,19 +58,20 @@ const communityLinks: FooterLinkPropsInterface[] = [
 const socialLinks: SocialLinkPropsInterface[] = [
   {
     link: '#',
-    // logo: ''
+    iconName: faYoutube
   },
   {
     link: '#',
-    // logo: ''
+    iconName: faTwitter
+
   },
   {
     link: '#',
-    // logo: ''
+    iconName: faFacebook
   },
   {
     link: '#',
-    // logo: ''
+    iconName: faSkype
   },
 ]
 
