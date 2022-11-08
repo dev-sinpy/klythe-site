@@ -47,19 +47,24 @@ const projectCardData: ProjectCardPropsInterface[] = [
 
 const buttonData: ProjectButtonPropsInterface[] = [
   {
-    buttonText: 'Website'
+    buttonText: 'Website',
+    className: "filter-btn active" 
   },
   {
-    buttonText: 'Landing Page'
+    buttonText: 'Landing Page',
+    className: "filter-btn" 
   },
   {
-    buttonText: 'iOS App'
+    buttonText: 'iOS App',
+    className: "filter-btn" 
   },
   {
-    buttonText: 'Landing Page'
+    buttonText: 'Landing Page',
+    className: "filter-btn" 
   },
   {
-    buttonText: 'Branding Design'
+    buttonText: 'Branding Design',
+    className: "filter-btn" 
   }
 ]
 
@@ -79,7 +84,6 @@ const ProjectSection = () => {
               <ProjectButton {...item} />
             </li>
           })}
-          {/* className="filter-btn active" */}
         </ul>
 
         <ul className="grid-list">

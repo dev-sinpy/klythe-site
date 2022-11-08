@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ServiceCard, ServiceCardPropsInterface } from '../ServiceCard';
 
 const serviceCardData: ServiceCardPropsInterface[] = [
@@ -64,7 +63,6 @@ const ServiceSection = () => {
           <li>
             <a href="#" className="link-card">
               <span className="span">04 More Service</span>
-              {/* <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon> */}
             </a>
           </li>
         </ul>
