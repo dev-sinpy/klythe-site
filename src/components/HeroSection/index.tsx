@@ -3,9 +3,7 @@ import styles from './HeroSection.module.scss';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeroLinkPropsInterface, HeroSocialLink } from '../HeroSocialLinks';
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faYoutube } from "@fortawesome/free-brands-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faYoutube, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const linkData: HeroLinkPropsInterface[] = [
   {

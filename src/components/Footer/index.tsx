@@ -2,10 +2,7 @@ import { FooterLinks } from '../FooterLinks';
 import styles from './Footer.module.scss';
 import { FooterLinkPropsInterface } from '../FooterLinks/index';
 import { SocialLinkPropsInterface, FooterSocialLinks } from '../FooterSocialLink';
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faYoutube } from "@fortawesome/free-brands-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faSkype } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faYoutube, faTwitter, faSkype } from "@fortawesome/free-brands-svg-icons";
 
 const usefulLinks: FooterLinkPropsInterface[] = [
   {
