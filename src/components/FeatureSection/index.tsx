@@ -1,19 +1,26 @@
 import Image from 'next/image';
 import { FeatureCardPropsInterface, FeatureCard } from '../FeatureCard';
 import styles from './FeatureSection.module.scss';
+import { faRocket, faUserGroup, faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 const featureCardData: FeatureCardPropsInterface[] = [
   {
     title: 'Fast working process',
-    text: 'At Pixology we specialize in designing, building, shipping and scaling beautiful.'
+    text: 'At Pixology we specialize in designing, building, shipping and scaling beautiful.',
+    iconName: faRocket,
+    color: ''
   },
   {
     title: 'Didicated team',
-    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.'
+    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.',
+    iconName: faUserGroup,
+    color: ''
   },
   {
     title: '24/7 hours support',
-    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.'
+    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.',
+    iconName: faHeadphones,
+    color: ''
   },
 ]
 

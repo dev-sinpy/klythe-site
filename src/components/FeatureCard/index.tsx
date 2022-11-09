@@ -1,16 +1,19 @@
 import styles from './FeatureCard.module.scss';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+
 export interface FeatureCardPropsInterface {
-    title: string;
-    text: string;
+    title: string,
+    text: string,
+    iconName: IconProp,
+    color: string
 }
 
 const FeatureCard = (props: FeatureCardPropsInterface) => {
     return (
         <div className={styles['feature-card']}>
-            <div className={styles['card-icon-rocket']}>
-                <FontAwesomeIcon icon={faRocket} />
+            <div className={styles['card-icon']}>
+                <FontAwesomeIcon icon={props.iconName} color={props.color}/>
             </div>
             <div>
                 <h3 className="h3 card-title">{props.title}</h3>

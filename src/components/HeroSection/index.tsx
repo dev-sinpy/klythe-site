@@ -9,17 +9,20 @@ const linkData: HeroLinkPropsInterface[] = [
   {
     link: '#',
     title: 'Facebook',
-    iconName: faFacebook
+    iconName: faFacebook,
+    color: '#5A58E9'
   },
   {
     link: '#',
     title: 'Youtube',
-    iconName: faYoutube
+    iconName: faYoutube,
+    color: '#FF0000'
   },
   {
     link: '#',
     title: 'Twitter',
-    iconName: faTwitter
+    iconName: faTwitter, 
+    color: '#1CA0F2'
   },
 ]
 

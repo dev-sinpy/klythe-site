@@ -5,14 +5,15 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 export interface HeroLinkPropsInterface {
     link: string,
     title: string,
-    iconName: IconProp 
+    iconName: IconProp,
+    color: string
 }
 
 const HeroSocialLink = (props: HeroLinkPropsInterface) => {
     return (
         <>
             <a href={props.link} className="social-link">
-                <FontAwesomeIcon icon={props.iconName} />
+                <FontAwesomeIcon icon={props.iconName} color={props.color} />
                 <span className="span">{props.title}</span>
             </a>
         </>
