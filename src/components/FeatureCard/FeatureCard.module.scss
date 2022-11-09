@@ -1,0 +1,66 @@
+.card-icon {
+  color: aqua;
+}
+
+.feature-card .card-icon {
+  background-color: hsla(var(--color), 0.15);
+  font-size: 24px;
+  max-width: max-content;
+  padding: 18px;
+  border-radius: 50%;
+  margin-block-end: 20px;
+  transition: var(--transition-2);
+}
+
+.feature-card .card-icon ion-icon {
+  color: hsla(var(--color));
+  transition: var(--transition-1);
+}
+
+.feature-card .card-text {
+  color: var(--cool-gray);
+  font-size: var(--fs-7);
+  margin-block-start: 10px;
+}
+
+.feature-card:is(:hover, :focus) .card-icon {
+  box-shadow: inset 0 0 0 30px hsla(var(--color), 0.9);
+}
+
+.feature-card:is(:hover, :focus) .card-icon ion-icon {
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .feature-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .feature-card .card-icon {
+    margin-block-end: 0;
+  }
+
+  .feature-card .card-text {
+    max-width: 32ch;
+  }
+}
+
+.card-text {
+  color: var(--cool-gray);
+}
+
+.card-icon {
+  max-width: max-content;
+  padding: 15px;
+  border-radius: var(--radius-8);
+  background-color: hsla(var(--color), 0.15);
+  margin-block-end: 25px;
+  transition: var(--transition-2);
+}
+
+.service-card:is(:hover, :focus-within) .card-icon {
+  transform: rotateY(0.5turn);
+}

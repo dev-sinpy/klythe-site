@@ -1,254 +1,135 @@
-import Image from 'next/image';
+import { FooterLinks } from '../FooterLinks';
+import styles from './Footer.module.scss';
+import { FooterLinkPropsInterface } from '../FooterLinks/index';
+import { SocialLinkPropsInterface, FooterSocialLinks } from '../FooterSocialLink';
+import { faFacebook, faYoutube, faTwitter, faSkype } from "@fortawesome/free-brands-svg-icons";
+
+const usefulLinks: FooterLinkPropsInterface[] = [
+  {
+    link: "#",
+    title: "Contact Us"
+  },
+  {
+    link: "#",
+    title: "How it Works"
+  },
+  {
+    link: "#",
+    title: "Create"
+  },
+  {
+    link: "#",
+    title: "Explore"
+  },
+  {
+    link: "#",
+    title: "Terms & Services"
+  },
+
+]
+
+const communityLinks: FooterLinkPropsInterface[] = [
+  {
+    link: "#",
+    title: "Help Center"
+  },
+  {
+    link: "#",
+    title: "Partners"
+  },
+  {
+    link: "#",
+    title: "Suggestions"
+  },
+  {
+    link: "#",
+    title: "Blog"
+  },
+  {
+    link: "#",
+    title: "Newsletters"
+  },
+
+]
+
+const socialLinks: SocialLinkPropsInterface[] = [
+  {
+    link: '#',
+    iconName: faYoutube
+  },
+  {
+    link: '#',
+    iconName: faTwitter
+
+  },
+  {
+    link: '#',
+    iconName: faFacebook
+  },
+  {
+    link: '#',
+    iconName: faSkype
+  },
+]
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className={styles['footer']}>
       <div className="container">
         <div className="footer-top section">
           <div className="footer-brand">
-            <p className="footer-list-title">About Klythe</p>
+            <p className={styles['footer-list-title']}>About Klythe</p>
 
-            <p className="footer-text">
+            <p className={styles['footer-text']}>
               A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci
               tationulla
             </p>
 
-            <ul className="social-list">
-              <li>
-                <a href="#" className="social-link">
-                  {/* <ion-icon name="logo-youtube"></ion-icon> */}
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="social-link">
-                  {/* <ion-icon name="logo-twitter"></ion-icon> */}
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="social-link">
-                  {/* <ion-icon name="logo-facebook"></ion-icon> */}
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="social-link">
-                  {/* <ion-icon name="logo-skype"></ion-icon> */}
-                </a>
-              </li>
+            <ul className={styles['social-list']}>
+              {socialLinks.map((item, index) => {
+                return <li key={index}>
+                  <FooterSocialLinks {...item} />
+                </li>
+              })}
             </ul>
           </div>
 
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Usefull Links</p>
+              <p className={styles['footer-list-title']}>Useful Links</p>
             </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Contact us
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                How it Works
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Create
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Explore
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Terms & Services
-              </a>
-            </li>
+            {usefulLinks.map((item, index) => {
+              return <li key={index}>
+                <FooterLinks {...item} />
+              </li>
+            })}
           </ul>
 
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Community</p>
+              <p className={styles['footer-list-title']}>Community</p>
             </li>
 
-            <li>
-              <a href="#" className="footer-link">
-                Help Center
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Partners
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Suggestions
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Blog
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="footer-link">
-                Newsletters
-              </a>
-            </li>
-          </ul>
-
-          <ul className="footer-list">
-            <li>
-              <p className="footer-list-title">Instagram post</p>
-            </li>
-
-            <li>
-              <ul className="insta-post">
-                <li>
-                  <div className="insta-card">
-                    <figure className="post-banner">
-                      <Image
-                        src="/images/insta-post-1.jpg"
-                        width="77"
-                        height="63"
-                        loading="lazy"
-                        alt="instagram post"
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <a href="#" className="card-content">
-                      {/* <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> */}
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="insta-card">
-                    <figure className="post-banner">
-                      <Image
-                        src="/images/insta-post-2.jpg"
-                        width="77"
-                        height="63"
-                        loading="lazy"
-                        alt="instagram post"
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <a href="#" className="card-content">
-                      {/* <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> */}
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="insta-card">
-                    <figure className="post-banner">
-                      <Image
-                        src="/images/insta-post-3.jpg"
-                        width="77"
-                        height="63"
-                        loading="lazy"
-                        alt="instagram post"
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <a href="#" className="card-content">
-                      {/* <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> */}
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="insta-card">
-                    <figure className="post-banner">
-                      <Image
-                        src="/images/insta-post-4.jpg"
-                        width="77"
-                        height="63"
-                        loading="lazy"
-                        alt="instagram post"
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <a href="#" className="card-content">
-                      {/* <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> */}
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="insta-card">
-                    <figure className="post-banner">
-                      <Image
-                        src="/images/insta-post-5.jpg"
-                        width="77"
-                        height="63"
-                        loading="lazy"
-                        alt="instagram post"
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <a href="#" className="card-content">
-                      {/* <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> */}
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="insta-card">
-                    <figure className="post-banner">
-                      <Image
-                        src="/images/insta-post-6.jpg"
-                        width="77"
-                        height="63"
-                        loading="lazy"
-                        alt="instagram post"
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <a href="#" className="card-content">
-                      {/* <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon> */}
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
+            {communityLinks.map((item, index) => {
+              return <li key={index}>
+                <FooterLinks {...item} />
+              </li>
+            })}
           </ul>
         </div>
 
-        <div className="footer-bottom">
-          <p className="copyright">&copy; 2022 Klythe. All Rights Reserved by Klythe</p>
+        <div className={styles['footer-bottom']}>
+          <p className={styles['copyright']}>&copy; 2022 Klythe. All Rights Reserved by Klythe</p>
 
-          <ul className="footer-bottom-list">
+          <ul className={styles['footer-bottom-list']}>
             <li>
-              <a href="#" className="footer-bottom-link">
+              <a href="#" className={styles['footer-bottom-link']}>
                 Terms and conditions
               </a>
             </li>
 
             <li>
-              <a href="#" className="footer-bottom-link">
+              <a href="#" className={styles['footer-bottom-link']}>
                 Privacy policy
               </a>
             </li>

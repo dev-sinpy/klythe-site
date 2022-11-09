@@ -1,0 +1,23 @@
+.social-link {
+  background-color: var(--onyx);
+  padding: 14px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+  display: block;
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--majorelle-blue);
+  color: var(--white);
+}
+
+.footer-link {
+  font-size: var(--fs-8);
+  margin-block-start: 15px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--mustard);
+}
+

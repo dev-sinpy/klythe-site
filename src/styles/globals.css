@@ -386,6 +386,9 @@ body {
   padding-block: 25px;
   transition: padding var(--transition-1);
   z-index: 4;
+  background-color: var(--white);
+  padding-block: 15px !important;
+  box-shadow: var(--shadow-1);
 }
 
 .header.active {
@@ -660,7 +663,7 @@ body {
 }
 
 .feature-card .card-icon ion-icon {
-  color: hsl(var(--color));
+  color: hsla(var(--color));
   transition: var(--transition-1);
 }
 
