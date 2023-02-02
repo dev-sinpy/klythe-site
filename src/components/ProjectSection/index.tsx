@@ -4,20 +4,20 @@ import { ProjectButtonPropsInterface, ProjectButton } from '../ProjectButton';
 
 const projectCardData: ProjectCardPropsInterface[] = [
   {
-    image: "/images/project-1.jpg",
-    title: "Book art design",
-    tag: "Branding",
+    image: "/images/projects/payever.jpg",
+    title: "Payever",
+    tag: "ecommerce",
     width: "835",
     height: "429",
-    alt: "Book art design",
+    alt: "Payever",
   },
   {
-    image: "/images/project-2.jpg",
-    title: "Graphic Design",
-    tag: "Design",
+    image: "/images/projects/y-jewelry.png",
+    title: "Y-Jewelry",
+    tag: "fashion brand",
     width: "416",
     height: "429",
-    alt: "Graphic Design",
+    alt: "y-jewelry",
   },
   {
     image: "/images/project-3.jpg",
@@ -48,23 +48,23 @@ const projectCardData: ProjectCardPropsInterface[] = [
 const buttonData: ProjectButtonPropsInterface[] = [
   {
     buttonText: 'Website',
-    className: "filter-btn active" 
+    className: "filter-btn active"
   },
   {
     buttonText: 'Landing Page',
-    className: "filter-btn" 
+    className: "filter-btn"
   },
   {
     buttonText: 'iOS App',
-    className: "filter-btn" 
+    className: "filter-btn"
   },
   {
     buttonText: 'Landing Page',
-    className: "filter-btn" 
+    className: "filter-btn"
   },
   {
     buttonText: 'Branding Design',
-    className: "filter-btn" 
+    className: "filter-btn"
   }
 ]
 

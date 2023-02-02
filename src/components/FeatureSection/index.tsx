@@ -5,20 +5,20 @@ import { faRocket, faUserGroup, faHeadphones } from '@fortawesome/free-solid-svg
 
 const featureCardData: FeatureCardPropsInterface[] = [
   {
-    title: 'Fast working process',
-    text: 'At Pixology we specialize in designing, building, shipping and scaling beautiful.',
-    iconName: faRocket,
-    color: ''
-  },
-  {
-    title: 'Didicated team',
-    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.',
+    title: 'Access to our experienced and skilled developers',
+    text: 'Klythe offers teams of developers with a wide range of skills and experience, which can be beneficial for complex or specialized projects.',
     iconName: faUserGroup,
     color: ''
   },
   {
-    title: '24/7 hours support',
-    text: ' At Pixology we specialize in designing, building, shipping and scaling beautiful.',
+    title: 'Scalability',
+    text: ' Our agency can provide resources as needed, which can be useful for projects that have fluctuating resource requirements or tight deadline',
+    iconName: faRocket,
+    color: ''
+  },
+  {
+    title: 'Market expertise',
+    text: '  By outsourcing development tasks to klythe, your company can focus on their core business functions and leave the technical work to our experienced professionals.',
     iconName: faHeadphones,
     color: ''
   },
@@ -43,7 +43,7 @@ const FeatureSection = () => {
           <p className="section-subtitle has-before">Why Choose us</p>
 
           <h2 className="h2 section-title">
-            Specialist in aviding clients of financial <span className="has-before">challenges</span>
+            We deliver cutting-edge solutions for modern <span className="has-before">businesses</span>
           </h2>
 
           <ul className={styles['feature-list']}>
