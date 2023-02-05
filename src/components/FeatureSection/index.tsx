@@ -30,9 +30,17 @@ const FeatureSection = () => {
       <div className="container">
         <figure className={styles['feature-banner']}>
           <Image
-            src="/images/feature-banner.png"
-            width="582"
-            height="585"
+            src="/images/software-1.jpg"
+            width="900"
+            height="800"
+            loading="lazy"
+            alt="feature banner"
+            className="w-100"
+          />
+          <Image
+            src="/images/software-integration.jpg"
+            width="900"
+            height="800"
             loading="lazy"
             alt="feature banner"
             className="w-100"

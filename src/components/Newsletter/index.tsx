@@ -11,9 +11,9 @@ const Newsletter: React.FC = () => {
       <div className="container">
         <figure className={styles['newsletter-banner']}>
           <Image
-            src="/images/newsletter-banner.png"
-            width="355"
-            height="356"
+            src="/images/newsletter-1.png"
+            width="500"
+            height="400"
             loading="lazy"
             alt="newsletter banner"
             className="w-100"

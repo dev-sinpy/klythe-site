@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         <figure className={styles['hero-banner']}>
-          <Image src="/images/hero-banner.png" width="794" height="637" alt="hero banner" className="w-100" />
+          <Image src="/images/development.png" width="750" height="500"  alt="development banner" className="w-100" />
         </figure>
       </div>
     </section>

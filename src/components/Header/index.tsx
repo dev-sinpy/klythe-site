@@ -21,6 +21,10 @@ const NavBarLinkData: NavBarLinkPropsInterface[] = [
     title: "Portfolio"
   },
   {
+    link: "#aboutus",
+    title: "About Us"
+  },  
+  {
     link: "#blog",
     title: "Blog"
   },
@@ -35,7 +39,7 @@ const Header: React.FC = () => {
     return window.scrollY > 80;
   };
 
-  return (
+  return ( 
     <header className={`header ${isHeaderActive() ? 'active' : ''}`} data-header>
       <div className="container">
         <a href="#" className="logo">
