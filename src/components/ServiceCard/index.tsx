@@ -8,21 +8,21 @@ export interface ServiceCardPropsInterface {
     color: string;
 }
 
-const ServiceCard = (props: ServiceCardPropsInterface) => {
+const ServiceCard = ({ color, image, title }: ServiceCardPropsInterface) => {
     const container = useRef<any>(null);
 
     useEffect(() => {
-        container.current.style.setProperty('--color', props.color);
-    }, []);
+        container.current.style.setProperty('--color', color);
+    }, [color]);
 
     return (
         <div className={styles['service-card']} ref={container}>
             <div className={styles['card-icon']}>
-                <Image src={props.image} width="30" height="30" alt="service icon" color={props.color} />
+                <Image src={image} width="30" height="30" alt="service icon" color={color} />
             </div>
             <h3 className={styles['h3']}>
                 <a href="#" className={styles['card-title']}>
-                    {props.title}
+                    {title}
                 </a>
             </h3>
         </div>
