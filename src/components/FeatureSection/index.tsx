@@ -26,7 +26,7 @@ const featureCardData: FeatureCardPropsInterface[] = [
 
 const FeatureSection = () => {
   return (
-    <section className="section feature" id="feature" aria-label="feature">
+    <section className="feature" id="feature" aria-label="feature">
       <div className="container">
         <figure className={styles['feature-banner']}>
           <Image

@@ -9,45 +9,32 @@ const usefulLinks: FooterLinkPropsInterface[] = [
     link: "#",
     title: "Contact Us"
   },
-  {
-    link: "#",
-    title: "How it Works"
-  },
-  {
-    link: "#",
-    title: "Create"
-  },
-  {
-    link: "#",
-    title: "Explore"
-  },
+  // {
+  //   link: "#",
+  //   title: "How it Works"
+  // },
+  // {
+  //   link: "#",
+  //   title: "Create"
+  // },
+  // {
+  //   link: "#",
+  //   title: "Explore"
+  // },
   {
     link: "#",
     title: "Terms & Services"
   },
-
 ]
 
 const communityLinks: FooterLinkPropsInterface[] = [
-  {
-    link: "#",
-    title: "Help Center"
-  },
   {
     link: "#",
     title: "Partners"
   },
   {
     link: "#",
-    title: "Suggestions"
-  },
-  {
-    link: "#",
     title: "Blog"
-  },
-  {
-    link: "#",
-    title: "Newsletters"
   },
 
 ]
@@ -81,8 +68,8 @@ const Footer = () => {
             <p className={styles['footer-list-title']}>About Klythe</p>
 
             <p className={styles['footer-text']}>
-              A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci
-              tationulla
+            We use the latest technologies and programming languages to build robust, scalable software solutions that are reliable, secure, and easy to use.
+            We also offer ongoing support and maintenance to ensure that your software continues to perform at its best.
             </p>
 
             <ul className={styles['social-list']}>

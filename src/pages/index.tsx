@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           <ServiceSection />
           <FeatureSection />
           <ProjectSection />
-          <AboutPage />
+          {/* <AboutPage /> */}
           <Newsletter />
         </article>
       </main>
