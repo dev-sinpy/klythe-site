@@ -5,7 +5,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 export interface FeatureCardPropsInterface {
     title: string,
     text: string,
-    iconName: IconProp,
+    iconName: any,
     color: string
 }
 
