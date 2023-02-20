@@ -1,9 +1,8 @@
-import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './FooterSocialLink.module.scss';
 export interface SocialLinkPropsInterface {
-    link: string,
-    iconName: IconDefinition
+    link: string;
+    iconName: any;
 }
 
 const FooterSocialLinks = (props: SocialLinkPropsInterface) => {
