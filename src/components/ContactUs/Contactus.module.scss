@@ -1,0 +1,131 @@
+.contactus-banner {
+  max-width: max-content;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.form_div {
+  max-width: 50% !important;
+  margin: auto;
+}
+
+.email-field,
+.name-field,
+.message-field {
+  background-color: var(--majorelle-blue);
+  color: var(--white);
+  font-size: var(--fs-9);
+  min-height: 50px;
+  padding-inline: 20px;
+  border-radius: var(--radius-8);
+  margin-block-end: 20px;
+  // box-shadow: var(--shadow-5);
+  outline: 3px solid transparent;
+  outline-offset: 0;
+  transition: var(--transition-1);
+  margin-bottom: 10px !important;
+}
+
+.contactus-form {
+  max-width: 80%;
+  margin: auto !important;
+  padding: 50px;
+  padding-top: 30px;
+}
+
+.thankYou {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  padding: 10%;
+}
+
+.back_to_home {
+  color: white;
+  text-align: center;
+  background-color: #5A58E9;
+  padding: 3%;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+.success {
+  color: black;
+  font-size: 18px;
+}
+
+.button {
+  margin: auto;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.fill_form {
+  color: black;
+  margin-top: 10px;
+  // font-size: 10px;
+  text-align: center;
+}
+
+.title {
+  color: black;
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.email-field:focus,
+.name-field:focus,
+.message-field:focus {
+  outline-color: var(--white);
+}
+
+.email-field::placeholder,
+.name-field::placeholder,
+.message-field::placeholder {
+  color: inherit;
+}
+
+@media (min-width: 992px) {
+  .contactus-banner {
+    order: 1;
+    margin-inline-start: auto;
+  }
+
+  .contactus-form .btn-secondary {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .email-field,
+  .name-field,
+  .message-field {
+    min-height: 50px;
+    padding-inline: 40px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactus-form {
+    position: relative;
+  }
+
+  .email-field,
+  .name-field,
+  .message-field {
+    margin-block-end: 0;
+  }
+
+  .contactus-form .btn-secondary {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    // height: auto;
+    padding-inline: 15px;
+  }
+}
