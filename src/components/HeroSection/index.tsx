@@ -21,12 +21,15 @@ const linkData: HeroLinkPropsInterface[] = [
   {
     link: '#',
     title: 'Twitter',
-    iconName: faTwitter, 
+    iconName: faTwitter,
     color: '#1CA0F2'
   },
 ]
 
 const HeroSection: React.FC = () => {
+  const sendEmail = () => {
+    window.location.assign("mailto:admin@klythe.com");
+  }
   return (
     <section className="section hero" id="home" aria-label="hero">
       <div className="container">
@@ -41,7 +44,7 @@ const HeroSection: React.FC = () => {
           </p>
 
           <div className="wrapper">
-            <a href="#" className="btn btn-primary has-before has-after">
+            <a className="btn btn-primary has-before has-after" onClick={sendEmail}>
               How It Works
             </a>
           </div>
@@ -56,7 +59,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         <figure className={styles['hero-banner']}>
-          <Image src="/images/development.png" width="750" height="500"  alt="development banner" className="w-100" />
+          <Image src="/images/development.png" width="750" height="500" alt="development banner" className="w-100" />
         </figure>
       </div>
     </section>

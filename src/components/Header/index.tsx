@@ -20,10 +20,10 @@ const NavBarLinkData: NavBarLinkPropsInterface[] = [
     link: "#project",
     title: "Portfolio"
   },
-  {
-    link: "#blog",
-    title: "Blog"
-  },
+  // {
+  //   link: "#blog",
+  //   title: "Blog"
+  // },
 
 ]
 const Header: React.FC = () => {
@@ -34,6 +34,10 @@ const Header: React.FC = () => {
 
     return window.scrollY > 80;
   };
+
+  const sendEmail = () => {
+    window.location.assign("mailto:admin@klythe.com");
+  }
 
   return (
     <header className={`header ${isHeaderActive() ? 'active' : ''}`} data-header>
@@ -80,7 +84,7 @@ const Header: React.FC = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
 
-        <a href="#" className="btn btn-primary has-before has-after">
+        <a className="btn btn-primary has-before has-after" onClick={sendEmail}>
           Let’s Talk 👋
         </a>
 

@@ -1464,7 +1464,7 @@ body {
    */
 
   .footer-top {
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.9fr;
+    grid-template-columns: 1 1.5fr 0.5fr 0.9fr;
     padding-block: 120px;
   }
 
