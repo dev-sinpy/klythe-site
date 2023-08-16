@@ -41,9 +41,9 @@ const Newsletter: React.FC = () => {
           {subscribe ? (
             <>
               <h4 className='h4'>
-                Your subscription to Klythe's newsletter is confirmed.
+                Your subscription to Klythe&apos;s newsletter is confirmed.
                 Get ready to explore a world of informative content, exclusive offers,
-                and more. We appreciate your interest and can't wait to share exciting updates with you!
+                and more. We appreciate your interest and can&apos;t wait to share exciting updates with you!
               </h4>
               <button
                 type="button"
