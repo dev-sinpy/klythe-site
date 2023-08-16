@@ -103,7 +103,7 @@ const Footer = () => {
                   <p style={{ marginTop: '10px' }}>admin@klythe.com</p>
                 </li>
                 <li style={{ display: "flex", maxHeight: "50px", gap: '5%', marginTop: '10px' }}>
-                  <Image src='/images/location.png' alt='Image not found' width={100} height={50} />
+                  <Image src='/images/location.png' alt='Image not found' width={80} height={50} />
                   <p style={{ marginTop: '10px' }}>
                     First Floor, SCO 522, TDI TAZ PLAZA, sector 118, Airport
                     Road, Mohali, SAS Nagar, Punjab, 160055
