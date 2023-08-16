@@ -85,7 +85,7 @@ const Header: React.FC = () => {
         </button>
 
         <a className="btn btn-primary has-before has-after" onClick={sendEmail}>
-          Let’s Talk 👋
+          Contact Us
         </a>
 
         <div className="overlay" data-nav-toggler data-overlay></div>

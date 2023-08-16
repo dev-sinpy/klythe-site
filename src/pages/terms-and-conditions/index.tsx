@@ -17,8 +17,11 @@ const TermsConditions = () => {
         }
       </div>
       <div>
-        <Link href="/" className="btn btn-primary" style={{ margin: "auto", marginBottom: "10px" }}>
-          Back to Home
+        <Link href="/">
+          <button className="btn btn-primary has-before has-after"
+            style={{ margin: "auto", marginBottom: "10px", alignItems: 'center' }}>
+            Back to Home
+          </button>
         </Link>
       </div>
     </div>
