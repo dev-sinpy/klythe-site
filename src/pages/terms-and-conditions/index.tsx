@@ -9,7 +9,7 @@ const TermsConditions = () => {
         <p style={{ fontSize: "30px", textAlign: "center", color: "black" }}>Privacy Policy</p>
         {
           TermsAndCondition.map((item: any) =>
-            <div>
+            <div key={item.title}>
               <p style={{ marginBottom: '20px', color: 'black', fontSize: '20px' }}>{item.title}</p>
               <p style={{ marginBottom: "15px" }}>{item.content}</p>
             </div>
@@ -17,9 +17,12 @@ const TermsConditions = () => {
         }
       </div>
       <div>
-        <a href="/" className="btn btn-primary" style={{ margin: "auto", marginBottom: "10px" }}>
-          Back to Home
-        </a>
+        <Link href="/">
+          <button className="btn btn-primary has-before has-after"
+            style={{ margin: "auto", marginBottom: "10px", alignItems: 'center' }}>
+            Back to Home
+          </button>
+        </Link>
       </div>
     </div>
   )

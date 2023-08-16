@@ -45,17 +45,17 @@ const HeroSection: React.FC = () => {
 
           <div className="wrapper">
             <a className="btn btn-primary has-before has-after" onClick={sendEmail}>
-              How It Works
+              Contact Us
             </a>
           </div>
 
-          <ul className="social-list">
+          {/* <ul className="social-list">
             {linkData.map((item, index) => {
               return <li key={index}>
                 <HeroSocialLink {...item} />
               </li>
             })}
-          </ul>
+          </ul> */}
         </div>
 
         <figure className={styles['hero-banner']}>
