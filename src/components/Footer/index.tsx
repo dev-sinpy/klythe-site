@@ -3,6 +3,8 @@ import styles from './Footer.module.scss';
 import { FooterLinkPropsInterface } from '../FooterLinks/index';
 import { SocialLinkPropsInterface, FooterSocialLinks } from '../FooterSocialLink';
 import { faFacebook, faYoutube, faTwitter, faSkype } from "@fortawesome/free-brands-svg-icons";
+import Link from 'next/link';
+import Image from 'next/image';
 
 const usefulLinks: FooterLinkPropsInterface[] = [
   {
@@ -47,7 +49,6 @@ const socialLinks: SocialLinkPropsInterface[] = [
   {
     link: '#',
     iconName: faTwitter
-
   },
   {
     link: '#',
@@ -93,16 +94,16 @@ const Footer = () => {
             <div>
               <ul style={{ marginTop: '10px' }}>
                 <li style={{ display: "flex", gap: '5%' }}>
-                  <img src='/images/phone.png' />
+                  <Image src='/images/phone.png' alt='Image not found' width={50} height={50} />
                   <p style={{ marginTop: '10px' }}>+91 8146591989</p>
                   <p style={{ marginTop: '10px' }}>+91 7837591989</p>
                 </li>
                 <li style={{ display: "flex", gap: '5%', marginTop: '10px' }}>
-                  <img src='/images/email.png' />
+                  <Image src='/images/email.png' alt='Image not found' width={50} height={50} />
                   <p style={{ marginTop: '10px' }}>admin@klythe.com</p>
                 </li>
                 <li style={{ display: "flex", maxHeight: "50px", gap: '5%', marginTop: '10px' }}>
-                  <img src='/images/location.png' />
+                  <Image src='/images/location.png' alt='Image not found' width={100} height={50} />
                   <p style={{ marginTop: '10px' }}>
                     First Floor, SCO 522, TDI TAZ PLAZA, sector 118, Airport
                     Road, Mohali, SAS Nagar, Punjab, 160055
@@ -130,15 +131,15 @@ const Footer = () => {
 
           <ul className={styles['footer-bottom-list']}>
             <li>
-              <a href="/terms-and-conditions" className={styles['footer-bottom-link']}>
+              <Link href="/terms-and-conditions" className={styles['footer-bottom-link']}>
                 Terms and conditions
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/privacy-policy" className={styles['footer-bottom-link']}>
+              <Link href="/privacy-policy" className={styles['footer-bottom-link']}>
                 Privacy policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -25,7 +25,7 @@ const ContactUs = () => {
             <p className={styles['success']}>
               Thank you for contacting us!
               We appreciate your interest and will get back to you as soon as possible.
-              Your inquiry is important to us, and we're excited to assist you.
+              Your inquiry is important to us, and we&apos;re excited to assist you.
             </p>
             <Link href='/'>
               <button className={styles['back_to_home']}>
